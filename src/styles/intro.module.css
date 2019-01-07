@@ -1,0 +1,9 @@
+intro {
+  width: 100%;
+}
+
+@media all and (min-width: 900px) {
+  .intro {
+    width: 60%;
+  }
+}
