@@ -1,29 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { StaticQuery, graphql } from 'gatsby'
 
-// import Header from './header'
 import '../styles/layout.module.css'
 
-const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
-        <div>{children}</div>
-      </>
-    )}
-  />
-)
+class Layout extends React.Component {
+  render() {
+    return <div>{this.props.children}</div>
+  }
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
