@@ -8,7 +8,21 @@ import Title from '../components/atoms/title'
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO
+      title="Henrique Macedo — UI Developer"
+      keywords={[
+        `henrique macedo`,
+        `ui`,
+        `ux`,
+        `design`,
+        `ui design`,
+        `front-end`,
+        `developer`,
+        `design system`,
+        `react`,
+        `react native`,
+      ]}
+    />
     <Intro>
       <Title value="Hello." />
       <p>
