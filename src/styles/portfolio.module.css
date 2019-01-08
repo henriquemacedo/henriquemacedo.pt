@@ -1,0 +1,19 @@
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 1px;
+}
+
+.portfolio > div {
+  /* border: 1px solid blue; */
+  background-color: teal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio > div:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}

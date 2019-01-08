@@ -3,6 +3,7 @@ import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Intro from '../components/molecules/intro'
+import Portfolio from '../components/molecules/portfolio'
 import Footer from '../components/molecules/footer'
 import footerLinks from '../utils/footerLinks'
 
@@ -32,17 +33,17 @@ const IndexPage = () => (
         magic with HTML, CSS, JavaScript, React JS and React Native.
       </p>
       <p>
-        Co-Founder of{' '}
-        <a href="http://dignus.care" target="_blank" rel="noopener noreferrer">
-          Dignus Care
-        </a>
-        . Currently partner at OSRAM on{' '}
+        Currently partner at OSRAM on{' '}
         <a
           href="https://youtu.be/wHhf56_hjbE"
           target="_blank"
           rel="noopener noreferrer"
         >
           Phytofy RL project
+        </a>
+        . Co-Founder of{' '}
+        <a href="http://dignus.care" target="_blank" rel="noopener noreferrer">
+          Dignus Care
         </a>
         . Previously at CoolFarm,{' '}
         <a
@@ -79,6 +80,7 @@ const IndexPage = () => (
         .
       </p>
     </Intro>
+    <Portfolio />
     <Footer values={footerLinks} />
   </Layout>
 )
