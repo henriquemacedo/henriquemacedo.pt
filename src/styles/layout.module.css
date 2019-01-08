@@ -29,21 +29,24 @@
 }
 
 html {
-  font-size: 100%;
+  font-size: calc(17px + (26 - 17) * (100vw - 400px) / (1600 - 400));
 }
 
 body {
   background-color: var(--bg, #1d252c);
   margin: 0;
-  padding: 2rem;
   font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
   font-weight: 300;
-  line-height: 1.6;
+  line-height: 160%;
   color: var(--text, #ffffff);
 }
 
-p:not(last-child) {
-  margin-bottom: 1.5rem;
+h1 {
+  margin: 0 0 5vw 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--grey, #41505e);
 }
 
 a {
@@ -58,16 +61,4 @@ a {
 
 a:hover {
   border-color: var(--highlight, #e0be24);
-}
-
-@media all and (min-width: 600px) {
-  body {
-    padding: 6rem;
-  }
-}
-
-@media all and (min-width: 1281px) {
-  body {
-    font-size: 1.5rem;
-  }
 }

@@ -3,8 +3,6 @@ import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Intro from '../components/molecules/intro'
-// import Image from '../components/image'
-import Title from '../components/atoms/title'
 
 const IndexPage = () => (
   <Layout>
@@ -24,7 +22,7 @@ const IndexPage = () => (
       ]}
     />
     <Intro>
-      <Title value="Hello." />
+      <h1>Hello.</h1>
       <p>
         I'm a UI Developer with a strong motivation for build beautiful user
         interfaces from the scratch to the final &#60;/stage&#62;. With a focus
@@ -36,15 +34,15 @@ const IndexPage = () => (
         <a href="http://dignus.care" target="_blank" rel="noopener noreferrer">
           Dignus Care
         </a>
-        . Previously at{' '}
+        . Currently partner at OSRAM on{' '}
         <a
-          href="http://cool-farm.com"
+          href="https://youtu.be/wHhf56_hjbE"
           target="_blank"
           rel="noopener noreferrer"
         >
-          CoolFarm
+          Phytofy RL project
         </a>
-        ,{' '}
+        . Previously at CoolFarm ,{' '}
         <a
           href="https://www.whitesmith.co"
           target="_blank"
