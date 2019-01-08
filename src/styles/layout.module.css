@@ -1,3 +1,19 @@
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Mono Light'), local('RobotoMono-Light'),
+    url('../fonts/Roboto_Mono/RobotoMono-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto Mono';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Mono Bold'), local('RobotoMono-Bold'),
+    url('../fonts/Roboto_Mono/RobotoMono-Bold.ttf') format('truetype');
+}
+
 * {
   box-sizing: border-box;
 }
@@ -8,6 +24,8 @@
   --grey: #41505e;
   --darkGrey: #263238;
   --highlight: #e0be24;
+  --light: 300;
+  --bold: 700;
 }
 
 html {
