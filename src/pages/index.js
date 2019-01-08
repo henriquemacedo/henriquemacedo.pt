@@ -3,6 +3,8 @@ import React from 'react'
 import SEO from '../components/seo'
 import Layout from '../components/layout'
 import Intro from '../components/molecules/intro'
+import Footer from '../components/molecules/footer'
+import footerLinks from '../utils/footerLinks'
 
 const IndexPage = () => (
   <Layout>
@@ -42,7 +44,7 @@ const IndexPage = () => (
         >
           Phytofy RL project
         </a>
-        . Previously at CoolFarm ,{' '}
+        . Previously at CoolFarm,{' '}
         <a
           href="https://www.whitesmith.co"
           target="_blank"
@@ -77,6 +79,7 @@ const IndexPage = () => (
         .
       </p>
     </Intro>
+    <Footer values={footerLinks} />
   </Layout>
 )
 
