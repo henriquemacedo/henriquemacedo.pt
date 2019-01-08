@@ -1,5 +1,5 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
+import PropTypes from 'prop-types'
 
 import styles from '../../styles/footer.module.css'
 
@@ -21,8 +21,10 @@ class Footer extends React.Component {
   }
 }
 
-// Title.propTypes = {
-//   value: PropTypes.string,
-// }
+Footer.propTypes = {
+  key: PropTypes.number,
+  link: PropTypes.string,
+  name: PropTypes.string,
+}
 
 export default Footer
