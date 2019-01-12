@@ -1,5 +1,6 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
+import Image from '../atoms/image'
 
 import styles from '../../styles/portfolio.module.css'
 
@@ -7,7 +8,9 @@ class Portfolio extends React.Component {
   render() {
     return (
       <div className={styles.portfolio}>
-        <div>1</div>
+        {/* <div> */}
+        <Image />
+        {/* </div> */}
         <div>2</div>
         <div>3</div>
         <div>4</div>
