@@ -1,7 +1,7 @@
 import React from 'react'
 
-import SEO from '../components/seo'
-import Layout from '../components/layout'
+import SEO from '../utils/seo'
+import Layout from '../components/organisms/layout'
 import Intro from '../components/molecules/intro'
 import Portfolio from '../components/molecules/portfolio'
 import Footer from '../components/molecules/footer'

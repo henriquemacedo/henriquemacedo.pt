@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import '../styles/layout.module.css'
+import '../../styles/layout.module.css'
 
 class Layout extends React.Component {
   render() {
