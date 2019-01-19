@@ -1,4 +1,6 @@
 import React from 'react'
+// import { graphql } from 'gatsby'
+// import Img from 'gatsby-image'
 
 import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
@@ -81,8 +83,31 @@ const IndexPage = () => (
       </p>
     </Intro>
     <Portfolio />
+    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} />
+      <Img fluid={props.data.imageTwo.childImageSharp.fluid} /> */}
     <Footer values={footerLinks} />
   </Layout>
 )
 
 export default IndexPage
+
+// export const fluidImage = graphql`
+//   fragment fluidImage on File {
+//     childImageSharp {
+//       fluid(maxWidth: 1280) {
+//         ...GatsbyImageSharpFluid
+//       }
+//     }
+//   }
+// `
+
+// export const pageQuery = graphql`
+//   query {
+//     imageOne: file(relativePath: { eq: "test-image.jpg" }) {
+//       ...fluidImage
+//     }
+//     imageTwo: file(relativePath: { eq: "gatsby-astronaut.png" }) {
+//       ...fluidImage
+//     }
+//   }
+// `
