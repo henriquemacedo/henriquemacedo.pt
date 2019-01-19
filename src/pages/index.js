@@ -1,6 +1,4 @@
 import React from 'react'
-// import { graphql } from 'gatsby'
-// import Img from 'gatsby-image'
 
 import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
@@ -30,7 +28,7 @@ const IndexPage = () => (
       <h1>Hello.</h1>
       <p>
         I'm a UI Developer with a strong motivation for build beautiful user
-        interfaces from the scratch to the final &#60;/stage&#62;. With a focus
+        interfaces from the scratch to the final &#60;/stage&#62;, with a focus
         on design systems, performance and accessibility. I like doing some
         magic with HTML, CSS, JavaScript, React JS and React Native.
       </p>
@@ -57,57 +55,18 @@ const IndexPage = () => (
         </a>
         ,{' '}
         <a
-          href="https://www.mirror.co.uk"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sunday Mirror
-        </a>
-        ,{' '}
-        <a
           href="https://fincheck.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Fincheck
         </a>
-        ,{' '}
-        <a
-          href="https://smarttradeapp.com"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-        >
-          SmartTrade
-        </a>
         .
       </p>
     </Intro>
     <Portfolio />
-    {/* <Img fluid={props.data.imageOne.childImageSharp.fluid} />
-      <Img fluid={props.data.imageTwo.childImageSharp.fluid} /> */}
     <Footer values={footerLinks} />
   </Layout>
 )
 
 export default IndexPage
-
-// export const fluidImage = graphql`
-//   fragment fluidImage on File {
-//     childImageSharp {
-//       fluid(maxWidth: 1280) {
-//         ...GatsbyImageSharpFluid
-//       }
-//     }
-//   }
-// `
-
-// export const pageQuery = graphql`
-//   query {
-//     imageOne: file(relativePath: { eq: "test-image.jpg" }) {
-//       ...fluidImage
-//     }
-//     imageTwo: file(relativePath: { eq: "gatsby-astronaut.png" }) {
-//       ...fluidImage
-//     }
-//   }
-// `
