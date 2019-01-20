@@ -24,8 +24,7 @@ const IndexPage = () => (
         `react native`,
       ]}
     />
-    <Intro>
-      <h1>Hello.</h1>
+    <Intro title="Hello.">
       <p>
         I'm a UI Developer with a strong motivation for build beautiful user
         interfaces from the scratch to the final &#60;/stage&#62;, with a focus
