@@ -3,8 +3,10 @@ import React from 'react'
 import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
 import Intro from '../components/molecules/intro'
+import Companies from '../components/molecules/companies'
 import Portfolio from '../components/molecules/portfolio'
 import Footer from '../components/molecules/footer'
+import companiesList from '../utils/companiesList'
 import footerLinks from '../utils/footerLinks'
 
 const IndexPage = () => (
@@ -63,6 +65,10 @@ const IndexPage = () => (
         .
       </p>
     </Intro>
+    <Companies
+      title="Developing products arround the world"
+      values={companiesList}
+    />
     <Portfolio />
     <Footer values={footerLinks} />
   </Layout>
