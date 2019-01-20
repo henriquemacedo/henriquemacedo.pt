@@ -16,6 +16,7 @@ class Intro extends React.Component {
 
 Intro.propTypes = {
   title: PropTypes.string,
+  children: PropTypes.node.isRequired,
 }
 
 export default Intro

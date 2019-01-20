@@ -25,6 +25,7 @@ Footer.propTypes = {
   key: PropTypes.number,
   link: PropTypes.string,
   name: PropTypes.string,
+  footerLinks: PropTypes.array,
 }
 
 export default Footer

@@ -42,6 +42,14 @@ body {
   color: var(--white, #ededed);
 }
 
+p {
+  margin: 0;
+}
+
+p:not(:last-child) {
+  margin-bottom: 2vw;
+}
+
 a {
   border-bottom: 1px solid var(--grey, #41505e);
   color: var(--white, #ededed);
