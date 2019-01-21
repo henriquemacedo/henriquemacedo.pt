@@ -13,6 +13,7 @@ const IndexPage = () => (
   <Layout>
     <SEO
       title="Henrique Macedo — UI Developer"
+      e3
       keywords={[
         `henrique macedo`,
         `ui`,

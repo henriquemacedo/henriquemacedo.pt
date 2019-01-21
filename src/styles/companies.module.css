@@ -3,16 +3,20 @@
 }
 
 .companies h2 {
-  margin: 0 0 2vw 0;
+  margin: 0 0 10vw 0;
   font-size: 1rem;
   font-weight: var(--light, 300);
   color: var(--grey, #41505e);
 }
 
 .companies > div {
+  text-align: center;
+}
+
+.companies > div {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  grid-gap: 5vw;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 10vw;
 }
 
 .companies > div > div {
@@ -25,4 +29,18 @@
   width: 100%;
   height: auto;
   max-height: 80px;
+}
+
+@media all and (min-width: 768px) {
+  .companies h2 {
+    margin: 0 0 2vw 0;
+  }
+
+  .companies > div {
+    grid-gap: 5vw;
+  }
+
+  .companies img {
+    max-width: 60vw;
+  }
 }
