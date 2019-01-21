@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Henrique Macedo — UI Developer`,
     description: `I'm a UI Developer with a strong motivation for build beautiful user interfaces from the scratch to the final stage.`,
     author: `@henrikemacedo`,
   },
@@ -25,17 +25,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Hello.`,
+        short_name: `Hello.`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/icons/gatsby-icon.png`,
+        background_color: `#1d252c`,
+        theme_color: `#1d252c`,
+        display: `standalone`,
+        icon: `src/images/icons/icon.png`,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
   ],
 }
