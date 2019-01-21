@@ -1,14 +1,19 @@
-import dummyLogo1 from '../images/companies/dummy-logo-1.svg'
-import dummyLogo2 from '../images/companies/dummy-logo-2.svg'
+import osram from '../images/companies/osram.svg'
+import coolfarm from '../images/companies/coolfarm.svg'
+import mirror from '../images/companies/mirror.svg'
+import whitesmith from '../images/companies/whitesmith.svg'
+import fincheck from '../images/companies/fincheck.svg'
+import uc from '../images/companies/uc.svg'
+import dignuscare from '../images/companies/dignuscare.svg'
 
 const companies = [
-  { key: 1, logo: dummyLogo1, name: 'Company 1' },
-  { key: 2, logo: dummyLogo2, name: 'Company 2' },
-  { key: 3, logo: dummyLogo1, name: 'Company 1' },
-  { key: 4, logo: dummyLogo2, name: 'Company 2' },
-  { key: 5, logo: dummyLogo1, name: 'Company 1' },
-  { key: 6, logo: dummyLogo2, name: 'Company 2' },
-  { key: 7, logo: dummyLogo1, name: 'Company 1' },
+  { key: 1, logo: osram, name: 'OSRAM' },
+  { key: 2, logo: dignuscare, name: 'Dignus Care' },
+  { key: 3, logo: coolfarm, name: 'CoolFarm' },
+  { key: 4, logo: whitesmith, name: 'Whitesmith' },
+  { key: 5, logo: mirror, name: 'Mirror' },
+  { key: 6, logo: fincheck, name: 'Fincheck' },
+  { key: 7, logo: uc, name: 'University of Coimbra' },
 ]
 
 export default companies
