@@ -1,10 +1,10 @@
 import osram from '../images/companies/osram.svg'
-import coolfarm from '../images/companies/coolfarm.svg'
-import mirror from '../images/companies/mirror.svg'
-import whitesmith from '../images/companies/whitesmith.svg'
-import fincheck from '../images/companies/fincheck.svg'
-import uc from '../images/companies/uc.svg'
 import dignuscare from '../images/companies/dignuscare.svg'
+import coolfarm from '../images/companies/coolfarm.svg'
+import whitesmith from '../images/companies/whitesmith.svg'
+import mirror from '../images/companies/mirror.svg'
+import fincheck from '../images/companies/fincheck.svg'
+import uc from '../images/companies/uc.png'
 
 const companies = [
   { key: 1, logo: osram, name: 'OSRAM' },
