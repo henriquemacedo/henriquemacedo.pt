@@ -3,7 +3,6 @@ const footerLinks = [
   { key: 2, link: 'https://dev.to/henrique', name: 'DEV Community' },
   { key: 3, link: 'https://dribbble.com/henriquemacedo', name: 'Dribbble' },
   { key: 4, link: 'https://twitter.com/henrikemacedo', name: 'Twitter' },
-  { key: 5, link: 'https://instagram.com/henrikemacedo/', name: 'Instagram' },
   {
     key: 6,
     link: 'https://www.linkedin.com/in/henrikemacedo',
