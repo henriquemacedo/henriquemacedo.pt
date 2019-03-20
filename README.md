@@ -8,7 +8,7 @@
 - [x] Footer
 - [x] Happy companies
 - [x] Portfolio grid with graphql
-- [ ] Real project images
+- [x] Real project images
 - [ ] Link each image to project details page
 - [ ] Blog post page
 - [ ] Load posts list
