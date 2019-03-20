@@ -3,6 +3,7 @@ module.exports = {
     title: `Henrique Macedo — UI Developer`,
     description: `I'm a UI Developer with a strong motivation for build beautiful user interfaces from the scratch to the final stage.`,
     author: `@henrikemacedo`,
+    siteUrl: 'https://henriquemacedo.pt',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
