@@ -1,8 +1,24 @@
 import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
-import PortfolioImage from '../atoms/portfolioImage'
+import styled from 'styled-components'
 
-import styles from '../../styles/portfolio.module.css'
+import PortfolioImage from '../atoms/portfolioImage'
+import { device } from '../../utils/breakpoints'
+
+const Wrapper = styled.div`
+  margin-top: 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1px;
+
+  @media ${device.s} {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media ${device.xl} {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`
 
 const Portfolio = () => (
   <StaticQuery
@@ -24,9 +40,9 @@ const Portfolio = () => (
       }
     `}
     render={data => (
-      <div className={styles.portfolio}>
+      <Wrapper>
         <PortfolioImage portfolioImages={data.portfolioImages.edges} />
-      </div>
+      </Wrapper>
     )}
   />
 )

@@ -1,7 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import styles from '../../styles/footer.module.css'
+import { device } from '../../utils/breakpoints'
+
+const Wrapper = styled.div`
+  padding: 10vw;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li:not(:last-child) {
+      margin-right: 2vw;
+    }
+  }
+
+  @media ${device.s} {
+    ul li {
+      display: inline;
+      font-size: 0.8rem;
+    }
+  }
+`
 
 class Footer extends React.Component {
   render() {
@@ -14,9 +36,9 @@ class Footer extends React.Component {
     ))
 
     return (
-      <footer className={styles.footer}>
+      <Wrapper>
         <ul>{footerLinks}</ul>
-      </footer>
+      </Wrapper>
     )
   }
 }

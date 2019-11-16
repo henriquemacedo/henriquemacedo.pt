@@ -1,15 +1,25 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import styles from '../../styles/intro.module.css'
+const Wrapper = styled.div`
+  padding: 10vw;
+
+  h1 {
+    margin: 0 0 5vw 0;
+    font-size: 2rem;
+    font-weight: var(--bold, 700);
+    color: var(--highlight, #e0be24);
+  }
+`
 
 class Intro extends React.Component {
   render() {
     return (
-      <div className={styles.intro}>
+      <Wrapper>
         <h1>{this.props.title}</h1>
         {this.props.children}
-      </div>
+      </Wrapper>
     )
   }
 }

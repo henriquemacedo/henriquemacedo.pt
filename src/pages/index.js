@@ -1,7 +1,6 @@
 import React from 'react'
 
 import SEO from '../utils/seo'
-import Layout from '../components/organisms/layout'
 import Intro from '../components/molecules/intro'
 import Companies from '../components/molecules/companies'
 import Portfolio from '../components/molecules/portfolio'
@@ -10,7 +9,7 @@ import companiesList from '../utils/companiesList'
 import footerLinks from '../utils/footerLinks'
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <SEO
       title="Henrique Macedo — UI Developer"
       e3
@@ -80,7 +79,7 @@ const IndexPage = () => (
     />
     <Portfolio />
     <Footer values={footerLinks} />
-  </Layout>
+  </>
 )
 
 export default IndexPage
