@@ -4,28 +4,17 @@ import styled from 'styled-components'
 
 const Wrapper = styled.div`
   padding: 10vw;
-
-  h1 {
-    margin: 0 0 5vw 0;
-    font-size: 2rem;
-    font-weight: var(--bold, 700);
-    color: var(--highlight, #e0be24);
-  }
 `
 
-class Intro extends React.Component {
-  render() {
-    return (
-      <Wrapper>
-        <h1>{this.props.title}</h1>
-        {this.props.children}
-      </Wrapper>
-    )
-  }
-}
+const Intro = ({ title, children }) => (
+  <Wrapper>
+    <h1>{title}</h1>
+    {children}
+  </Wrapper>
+)
 
 Intro.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 }
 

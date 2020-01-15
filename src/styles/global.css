@@ -42,6 +42,13 @@ body {
   color: var(--white, #ededed);
 }
 
+h1 {
+  margin: 0 0 5vw 0;
+  font-size: 2rem;
+  font-weight: var(--bold, 700);
+  color: var(--highlight, #e0be24);
+}
+
 p {
   margin: 0;
 }
