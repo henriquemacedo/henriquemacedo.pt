@@ -27,7 +27,7 @@ const IndexPage = () => (
         `react native`,
       ]}
     />
-    <Main title="Hello.">
+    <Main>
       <p>
         I'm a Frontend Developer with a strong motivation for build beautiful
         user interfaces from the scratch to the final &#60;/stage&#62;, with a

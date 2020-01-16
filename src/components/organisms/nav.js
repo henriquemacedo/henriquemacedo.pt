@@ -1,15 +1,12 @@
 import React from 'react'
-// import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import { device } from '../ions/breakpoints'
 
 const Wrapper = styled.nav`
-  /* border: 1px solid red; */
   margin-top: 5vw;
   padding: 0 10vw;
-  /* font-size: 0.75rem; */
   font-weight: var(--bold, 700);
   text-transform: uppercase;
 
@@ -66,9 +63,5 @@ const Nav = () => (
     </ul>
   </Wrapper>
 )
-
-// Nav.propTypes = {
-//   children: PropTypes.node.isRequired,
-// }
 
 export default Nav

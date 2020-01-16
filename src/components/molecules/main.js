@@ -14,14 +14,10 @@ const Wrapper = styled.div`
     -o-transition: 0.2s;
     transition: 0.2s;
     cursor: pointer;
-  }
 
-  a.active {
-    color: red;
-  }
-
-  a:hover {
-    border-color: var(--highlight, #e0be24);
+    &:hover {
+      border-color: var(--highlight, #e0be24);
+    }
   }
 `
 
