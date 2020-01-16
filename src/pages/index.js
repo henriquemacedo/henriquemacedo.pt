@@ -2,7 +2,7 @@ import React from 'react'
 
 import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
-import Intro from '../components/molecules/intro'
+import Main from '../components/molecules/main'
 import Companies from '../components/molecules/companies'
 import Portfolio from '../components/molecules/portfolio'
 import Footer from '../components/molecules/footer'
@@ -27,7 +27,7 @@ const IndexPage = () => (
         `react native`,
       ]}
     />
-    <Intro title="Hello.">
+    <Main title="Hello.">
       <p>
         I'm a Frontend Developer with a strong motivation for build beautiful
         user interfaces from the scratch to the final &#60;/stage&#62;, with a
@@ -73,7 +73,7 @@ const IndexPage = () => (
         </a>
         .
       </p>
-    </Intro>
+    </Main>
     <Companies
       title="Developing products arround the world"
       values={companiesList}

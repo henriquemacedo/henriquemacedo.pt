@@ -56,22 +56,3 @@ p {
 p:not(:last-child) {
   margin-bottom: 2vw;
 }
-
-a {
-  border-bottom: 1px solid var(--grey, #41505e);
-  color: var(--white, #ededed);
-  text-decoration: none;
-  -webkit-transition: 0.2s;
-  -moz-transition: 0.2s;
-  -o-transition: 0.2s;
-  transition: 0.2s;
-  cursor: pointer;
-}
-
-a.active {
-  color: red;
-}
-
-a:hover {
-  border-color: var(--highlight, #e0be24);
-}
