@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 
 import PortfolioImage from '../atoms/portfolioImage'
-import { device } from '../../utils/breakpoints'
+import { device } from '../ions/breakpoints'
 
 const Wrapper = styled.div`
   margin-top: 10vw;

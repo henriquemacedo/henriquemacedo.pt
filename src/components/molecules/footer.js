@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { device } from '../../utils/breakpoints'
+import { device } from '../ions/breakpoints'
 
 const Wrapper = styled.div`
   padding: 10vw;
