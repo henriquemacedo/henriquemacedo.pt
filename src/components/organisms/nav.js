@@ -5,33 +5,49 @@ import { Link } from 'gatsby'
 import { device } from '../ions/breakpoints'
 
 const Wrapper = styled.nav`
-  margin-top: 5vw;
-  padding: 0 10vw;
+  border: 1px solid red;
+  position: fixed;
+  margin-top: 2vw;
+  width: 100%;
+  padding: 0 2vw;
+  font-size: 0.75rem;
   font-weight: var(--bold, 700);
   text-transform: uppercase;
+  z-index: 1;
 
-  @media ${device.s} {
-    font-size: 0.85rem;
-  }
+  /* @media ${device.s} {
+    font-size: 0.5rem;
+  } */
 
   ul {
     margin: 0;
     padding: 0;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
 
     li {
-      display: inline-block;
+      border: 1px solid yellow;
       list-style: none;
 
-      &:not(:last-child) {
+      /* &:not(:last-child) {
         margin-right: 40px;
-      }
+      } */
 
       a {
-        position: relative;
+        /* position: relative; */
         color: var(--white, #ededed);
         text-decoration: none;
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
 
-        &.active {
+        &:hover {
+          color: var(--highlight, #e0be24)
+        }
+
+        /* &.active {
           &:after {
             content: '';
             position: absolute;
@@ -41,7 +57,7 @@ const Wrapper = styled.nav`
             width: 100%;
             height: 5px;
           }
-        }
+        } */
       }
     }
   }
