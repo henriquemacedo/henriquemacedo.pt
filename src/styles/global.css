@@ -1,17 +1,17 @@
 @font-face {
-  font-family: 'Roboto Mono';
+  font-family: 'Libre Baskerville';
   font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Mono Light'), local('RobotoMono-Light'),
-    url('../fonts/Roboto_Mono/RobotoMono-Light.ttf') format('truetype');
+  font-weight: 700;
+  src: local('Libre Baskerville Bold'), local('LibreBaskerville-Bold'),
+    url('../fonts/Libre_Baskerville/LibreBaskerville-Bold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Roboto Mono';
+  font-family: 'Open Sans';
   font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Mono Bold'), local('RobotoMono-Bold'),
-    url('../fonts/Roboto_Mono/RobotoMono-Bold.ttf') format('truetype');
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'),
+    url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
 }
 
 * {
@@ -35,11 +35,16 @@ html {
 body {
   background-color: var(--bg, #1d252c);
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: var(--light, 300);
   line-height: 160%;
   color: var(--white, #ededed);
+}
+
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3rem;
 }
 
 p {
