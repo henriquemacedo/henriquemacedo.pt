@@ -3,10 +3,8 @@ import React from 'react'
 import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
 import Main from '../components/molecules/main'
-import Companies from '../components/molecules/companies'
 import Portfolio from '../components/molecules/portfolio'
 import Footer from '../components/molecules/footer'
-import companiesList from '../utils/companiesList'
 import footerLinks from '../utils/footerLinks'
 
 const IndexPage = () => (
@@ -28,6 +26,7 @@ const IndexPage = () => (
       ]}
     />
     <Main>
+      <h1>Hello.</h1>
       <p>
         I'm a Frontend Developer with a strong motivation for build beautiful
         user interfaces from the scratch to the final &#60;/stage&#62;, with a
@@ -41,7 +40,7 @@ const IndexPage = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          Taikai
+          TAIKAI
         </a>
         . Co-Founder of{' '}
         <a href="http://dignus.care" target="_blank" rel="noopener noreferrer">
@@ -74,10 +73,6 @@ const IndexPage = () => (
         .
       </p>
     </Main>
-    <Companies
-      title="Developing products arround the world"
-      values={companiesList}
-    />
     <Portfolio />
     <Footer values={footerLinks} />
   </Layout>

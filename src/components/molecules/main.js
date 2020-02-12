@@ -2,8 +2,14 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
+import { device } from '../ions/breakpoints'
+
 const Wrapper = styled.div`
-  padding: 10vw;
+  padding: 20vw 5vw;
+
+  h1 {
+    color: var(--highlight, #e0be24);
+  }
 
   a {
     border-bottom: 1px solid var(--grey, #41505e);
@@ -18,6 +24,10 @@ const Wrapper = styled.div`
     &:hover {
       border-color: var(--highlight, #e0be24);
     }
+  }
+
+  @media ${device.s} {
+    padding: 10vw;
   }
 `
 
