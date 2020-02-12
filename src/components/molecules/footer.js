@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
-import { device } from '../ions/breakpoints'
+import Icon from '../atoms/icon'
 
 const Wrapper = styled.div`
   padding: 10vw;
@@ -11,16 +11,32 @@ const Wrapper = styled.div`
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
 
-    li:not(:last-child) {
-      margin-right: 2vw;
-    }
-  }
+    li {
+      width: 30px;
+      height: 30px;
 
-  @media ${device.s} {
-    ul li {
-      display: inline;
-      font-size: 0.8rem;
+      &:not(:last-child) {
+        margin-right: 20px;
+      }
+
+      svg {
+        width: 30px;
+        height: 30px;
+        fill: var(--grey, #41505e);
+        -webkit-transition: 0.2s;
+        -moz-transition: 0.2s;
+        -o-transition: 0.2s;
+        transition: 0.2s;
+      }
+
+      &:hover {
+        svg {
+          fill: var(--white, #ededed);
+        }
+      }
     }
   }
 `
@@ -29,8 +45,13 @@ class Footer extends React.Component {
   render() {
     const footerLinks = this.props.values.map(value => (
       <li key={value.key}>
-        <a href={value.link} target="_blank" rel="noopener noreferrer">
-          {value.name}
+        <a
+          href={value.link}
+          title={value.name}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Icon icon={value.icon} />
         </a>
       </li>
     ))
