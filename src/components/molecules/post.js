@@ -2,49 +2,55 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
+import { device } from '../ions/breakpoints'
+
 const Wrapper = styled.div`
-  border-bottom: 1px solid var(--grey, #41505e);
-  display: flex;
-  padding: 5vw 0;
-
-  &:first-child {
-    padding-top: 0;
-  }
-
-  a {
-    border: 0;
-  }
-
   h1 {
-    margin: 0;
     font-size: 1.25rem;
-    font-weight: var(--bold, 700);
+    color: var(--white);
+
+    @media ${device.s} {
+      margin-bottom: -5px;
+    }
+  }
+
+  span {
+    font-size: 12px;
+    letter-spacing: 3px;
     text-transform: uppercase;
   }
 
   p {
-    margin: 15px 0 30px 0;
+    margin: 15px 0;
+    font-size: 16px;
   }
 
-  span {
-    font-size: 0.85rem;
+  a {
+    border: 0;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--white);
 
-    &.read-more {
-      font-style: underline;
-      color: var(--grey, #41505e);
-      text-transform: uppercase;
+    &:hover {
+      color: var(--highlight);
     }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 60px;
+    border-bottom: 1px solid var(--grey);
+    padding-bottom: 60px;
   }
 `
 
 const Post = ({ title, date, description, path }) => (
   <Wrapper>
-    <Link to={path}>
-      <h1>{title}</h1>
-      <span>{date}</span>
-      <p>{description}</p>
-      <span className="read-more">Read more</span>
-    </Link>
+    <h1>{title}</h1>
+    <span>{date}</span>
+    <p>{description}</p>
+    <Link to={path}>— Read More</Link>
   </Wrapper>
 )
 
