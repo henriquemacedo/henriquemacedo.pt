@@ -12,7 +12,6 @@ const Wrapper = styled.div`
 const Intro = ({ children }) => <Wrapper>{children}</Wrapper>
 
 Intro.propTypes = {
-  title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 }
 
