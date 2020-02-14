@@ -2,10 +2,8 @@ import React from 'react'
 
 import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
-import Main from '../components/molecules/main'
+import Intro from '../components/molecules/intro'
 import Portfolio from '../components/molecules/portfolio'
-import Footer from '../components/molecules/footer'
-import footerLinks from '../utils/footerLinks'
 
 const IndexPage = () => (
   <Layout>
@@ -25,7 +23,7 @@ const IndexPage = () => (
         `react native`,
       ]}
     />
-    <Main>
+    <Intro>
       <h1>Hello.</h1>
       <p>
         I'm a Frontend Developer with a strong motivation for build beautiful
@@ -40,7 +38,7 @@ const IndexPage = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          TAIKAI
+          Taikai
         </a>
         . Co-Founder of{' '}
         <a href="http://dignus.care" target="_blank" rel="noopener noreferrer">
@@ -72,9 +70,8 @@ const IndexPage = () => (
         </a>
         .
       </p>
-    </Main>
+    </Intro>
     <Portfolio />
-    <Footer values={footerLinks} />
   </Layout>
 )
 

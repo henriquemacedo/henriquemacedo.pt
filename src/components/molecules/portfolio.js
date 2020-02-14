@@ -6,7 +6,7 @@ import PortfolioImage from '../atoms/portfolioImage'
 import { device } from '../ions/breakpoints'
 
 const Wrapper = styled.div`
-  margin-top: 10vw;
+  /* margin-top: 10vw; */
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1px;

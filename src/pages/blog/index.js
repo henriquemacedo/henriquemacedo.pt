@@ -4,10 +4,8 @@ import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
 import Layout from '../../components/organisms/layout'
-import Main from '../../components/molecules/main'
+import Posts from '../../components/organisms/posts'
 import Post from '../../components/molecules/post'
-import Footer from '../../components/molecules/footer'
-import footerLinks from '../../utils/footerLinks'
 
 export const AllArticlesQuery = graphql`
   query AllArticles {
@@ -18,7 +16,6 @@ export const AllArticlesQuery = graphql`
             path
             date
             title
-            author
             description
           }
         }
@@ -30,9 +27,9 @@ export const AllArticlesQuery = graphql`
 const BlogPage = ({ data }) => (
   <Layout>
     <Helmet title="Henrique Macedo — Articles" />
-    <Main>
+    <Posts>
       {data.allMarkdownRemark.edges.map(post => {
-        const { title, author, date, description, path } = post.node.frontmatter
+        const { title, date, description, path } = post.node.frontmatter
         return (
           <Post
             title={title}
@@ -43,8 +40,7 @@ const BlogPage = ({ data }) => (
           />
         )
       })}
-    </Main>
-    <Footer values={footerLinks} />
+    </Posts>
   </Layout>
 )
 
