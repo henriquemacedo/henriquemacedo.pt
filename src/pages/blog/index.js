@@ -15,6 +15,7 @@ export const AllArticlesQuery = graphql`
           frontmatter {
             path
             date
+            time
             title
             description
           }
@@ -29,11 +30,12 @@ const BlogPage = ({ data }) => (
     <Helmet title="Henrique Macedo — Articles" />
     <Posts>
       {data.allMarkdownRemark.edges.map(post => {
-        const { title, date, description, path } = post.node.frontmatter
+        const { title, date, time, description, path } = post.node.frontmatter
         return (
           <Post
             title={title}
             date={date}
+            time={time}
             description={description}
             key={`${date}__${title}`}
             path={path}
@@ -45,7 +47,7 @@ const BlogPage = ({ data }) => (
 )
 
 BlogPage.propTypes = {
-  data: PropTypes.array,
+  data: PropTypes.object,
 }
 
 export default BlogPage

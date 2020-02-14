@@ -64,19 +64,17 @@ const Wrapper = styled.div`
   }
 `
 
-const Thanks = styled.div`
-  border: 1px solid red;
-`
-
 export default function Template({ data }) {
   const post = data.markdownRemark
-  const { title, date } = post.frontmatter
+  const { title, date, time } = post.frontmatter
 
   return (
     <Layout>
       <Wrapper>
         <h1>{title}</h1>
-        <span>{date}</span>
+        <span>
+          {date} · {time} min read
+        </span>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Wrapper>
     </Layout>
@@ -89,6 +87,7 @@ export const postQuery = graphql`
       frontmatter {
         date
         title
+        time
         path
       }
       html

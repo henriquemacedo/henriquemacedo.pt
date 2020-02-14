@@ -48,9 +48,11 @@ const Wrapper = styled.div`
   }
 `
 
-const Post = ({ title, date, description, path }) => (
+const Post = ({ title, date, time, description, path }) => (
   <Wrapper>
-    <span>{date}</span>
+    <span>
+      {date} · {time} min read
+    </span>
     <h1>{title}</h1>
     <p>{description}</p>
     <Link to={path}>— Read More</Link>

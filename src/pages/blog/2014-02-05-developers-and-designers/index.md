@@ -1,6 +1,7 @@
 ---
 path: '/blog/developers-and-designers'
 date: '5 Feb, 2014'
+time: '5'
 title: 'Why developers and designers should work with each other'
 description: 'There is a reason for so many group tasks in school. Starting in kindergarten and ending in college, every single person is encouraged and taught to perform in groups — a drawing, a sculpture, a volunteer project, a scientific experiment.'
 ---
