@@ -8,10 +8,7 @@ const Wrapper = styled.div`
   h1 {
     font-size: 1.25rem;
     color: var(--white);
-
-    @media ${device.s} {
-      margin-bottom: -5px;
-    }
+    line-height: 150%;
   }
 
   span {
@@ -21,8 +18,8 @@ const Wrapper = styled.div`
   }
 
   p {
-    margin: 15px 0;
-    font-size: 16px;
+    margin: 30px 0;
+    font-size: 17px;
   }
 
   a {
@@ -43,12 +40,18 @@ const Wrapper = styled.div`
     border-bottom: 1px solid var(--grey);
     padding-bottom: 60px;
   }
+
+  @media ${device.s} {
+    p {
+      line-height: 180%;
+    }
+  }
 `
 
 const Post = ({ title, date, description, path }) => (
   <Wrapper>
-    <h1>{title}</h1>
     <span>{date}</span>
+    <h1>{title}</h1>
     <p>{description}</p>
     <Link to={path}>— Read More</Link>
   </Wrapper>
