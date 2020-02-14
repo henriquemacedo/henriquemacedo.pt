@@ -41,34 +41,29 @@ const Wrapper = styled.div`
   }
 `
 
-class Footer extends React.Component {
-  render() {
-    const footerLinks = this.props.values.map(value => (
-      <li key={value.key}>
-        <a
-          href={value.link}
-          title={value.name}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Icon icon={value.icon} />
-        </a>
-      </li>
-    ))
+const Footer = ({ values }) => {
+  const footerLinks = values.map(value => (
+    <li key={value.key}>
+      <a
+        href={value.link}
+        title={value.name}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Icon icon={value.icon} />
+      </a>
+    </li>
+  ))
 
-    return (
-      <Wrapper>
-        <ul>{footerLinks}</ul>
-      </Wrapper>
-    )
-  }
+  return (
+    <Wrapper>
+      <ul>{footerLinks}</ul>
+    </Wrapper>
+  )
 }
 
 Footer.propTypes = {
-  key: PropTypes.number,
-  link: PropTypes.string,
-  name: PropTypes.string,
-  footerLinks: PropTypes.array,
+  values: PropTypes.array,
 }
 
 export default Footer

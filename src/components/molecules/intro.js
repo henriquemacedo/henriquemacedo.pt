@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import { device } from '../ions/breakpoints'
 
 const Wrapper = styled.div`
-  padding: 0 5vw 5vw 5vw;
+  padding: 0 5vw 0 5vw;
 
   @media ${device.s} {
     padding: 0 10vw 10vw 10vw;
@@ -29,7 +29,6 @@ const Wrapper = styled.div`
 const Intro = ({ children }) => <Wrapper>{children}</Wrapper>
 
 Intro.propTypes = {
-  title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
 }
 
