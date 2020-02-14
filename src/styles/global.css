@@ -38,19 +38,29 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1rem;
   font-weight: var(--light, 300);
-  line-height: 160%;
   color: var(--white, #ededed);
 }
 
 h1 {
+  margin: 0;
   font-family: 'Libre Baskerville', serif;
   font-size: 3rem;
 }
 
 p {
   margin: 0;
+  line-height: 160%;
 }
 
 p:not(:last-child) {
-  margin-bottom: 2vw;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  cursor: pointer;
 }
