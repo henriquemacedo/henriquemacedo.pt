@@ -42,11 +42,7 @@ const IndexPage = () => (
         >
           Taikai
         </a>
-        . Co-Founder of{' '}
-        <a href="http://dignus.care" target="_blank" rel="noopener noreferrer">
-          Dignus Care
-        </a>
-        . Previously at{' '}
+        . Co-Founder of Dignus Care. Previously at{' '}
         <a
           href="https://youtu.be/wHhf56_hjbE"
           target="_blank"
