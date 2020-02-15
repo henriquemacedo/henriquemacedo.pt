@@ -28,7 +28,7 @@ const IndexPage = () => (
     <Intro>
       <h1>Hello.</h1>
       <p>
-        I'm a Frontend Developer with a strong motivation for build beautiful
+        I'm a Frontend Developer with a strong motivation to build beautiful
         user interfaces from the scratch to the final &#60;/stage&#62;, with a
         focus on design systems, performance and accessibility. I like doing
         some magic with HTML, CSS, JavaScript, React JS and React Native.
