@@ -1,4 +1,5 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { graphql } from 'gatsby'
 
@@ -70,6 +71,7 @@ export default function Template({ data }) {
 
   return (
     <Layout>
+      <Helmet title={['Henrique Macedo — ', title]} />
       <Wrapper>
         <h1>{title}</h1>
         <span>
