@@ -8,14 +8,14 @@ import fincheck from '../images/companies/fincheck.svg'
 import uc from '../images/companies/uc.png'
 
 const companies = [
-  { key: 1, logo: taikai, name: 'Taikai' },
-  { key: 2, logo: osram, name: 'OSRAM' },
-  { key: 3, logo: dignuscare, name: 'Dignus Care' },
-  { key: 4, logo: coolfarm, name: 'CoolFarm' },
-  { key: 5, logo: whitesmith, name: 'Whitesmith' },
-  { key: 6, logo: mirror, name: 'Mirror' },
-  { key: 7, logo: fincheck, name: 'Fincheck' },
-  { key: 8, logo: uc, name: 'University of Coimbra' },
+  { logo: taikai, name: 'Taikai' },
+  { logo: osram, name: 'OSRAM' },
+  { logo: dignuscare, name: 'Dignus Care' },
+  { logo: coolfarm, name: 'CoolFarm' },
+  { logo: whitesmith, name: 'Whitesmith' },
+  { logo: mirror, name: 'Mirror' },
+  { logo: fincheck, name: 'Fincheck' },
+  { logo: uc, name: 'University of Coimbra' },
 ]
 
 export default companies

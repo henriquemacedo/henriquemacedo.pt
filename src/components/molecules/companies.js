@@ -1,27 +1,59 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import styled from 'styled-components'
 
-import styles from '../../styles/companies.module.css'
 import CompanyItem from '../atoms/companyItem'
+import { device } from '../ions/breakpoints'
 
-class Companies extends React.Component {
-  render() {
-    const companyItem = this.props.values.map(value => (
-      <CompanyItem key={value.key} logo={value.logo} name={value.name} />
-    ))
+const Wrapper = styled.div`
+  padding: 30px 5vw 60px 5vw;
 
-    return (
-      <div className={styles.companies}>
-        <h2>{this.props.title}</h2>
-        <div>{companyItem}</div>
-      </div>
-    )
+  @media ${device.s} {
+    padding: 0 10vw 10vw 10vw;
   }
+
+  h2 {
+    margin: 0 0 30px 0;
+    font-size: 1rem;
+    color: var(--grey, #41505e);
+  }
+
+  > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 30px;
+    text-align: center;
+  }
+
+  @media ${device.s} {
+    h2 {
+      font-size: 12px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    > div {
+      grid-gap: 5vw;
+    }
+  }
+`
+
+const Companies = ({ title, values }) => {
+  const companyItem = values.map((value, index) => (
+    <CompanyItem key={index} logo={value.logo} name={value.name} />
+  ))
+
+  return (
+    <Wrapper>
+      <h2>{title}</h2>
+      <div>{companyItem}</div>
+    </Wrapper>
+  )
 }
 
 Companies.propTypes = {
   title: PropTypes.string,
-  companyItem: PropTypes.array,
+  values: PropTypes.array,
 }
 
 export default Companies

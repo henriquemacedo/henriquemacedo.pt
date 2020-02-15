@@ -5,14 +5,12 @@ import Layout from '../components/organisms/layout'
 import Intro from '../components/molecules/intro'
 import Companies from '../components/molecules/companies'
 import Portfolio from '../components/molecules/portfolio'
-import Footer from '../components/molecules/footer'
 import companiesList from '../utils/companiesList'
-import footerLinks from '../utils/footerLinks'
 
 const IndexPage = () => (
   <Layout>
     <SEO
-      title="Henrique Macedo — UI Developer"
+      title="Henrique Macedo — Frontend Developer"
       e3
       keywords={[
         `henrique macedo`,
@@ -27,9 +25,10 @@ const IndexPage = () => (
         `react native`,
       ]}
     />
-    <Intro title="Hello.">
+    <Intro>
+      <h1>Hello.</h1>
       <p>
-        I'm a Frontend Developer with a strong motivation for build beautiful
+        I'm a Frontend Developer with a strong motivation to build beautiful
         user interfaces from the scratch to the final &#60;/stage&#62;, with a
         focus on design systems, performance and accessibility. I like doing
         some magic with HTML, CSS, JavaScript, React JS and React Native.
@@ -43,11 +42,7 @@ const IndexPage = () => (
         >
           Taikai
         </a>
-        . Co-Founder of{' '}
-        <a href="http://dignus.care" target="_blank" rel="noopener noreferrer">
-          Dignus Care
-        </a>
-        . Previously at{' '}
+        . Co-Founder of Dignus Care. Previously at{' '}
         <a
           href="https://youtu.be/wHhf56_hjbE"
           target="_blank"
@@ -79,7 +74,6 @@ const IndexPage = () => (
       values={companiesList}
     />
     <Portfolio />
-    <Footer values={footerLinks} />
   </Layout>
 )
 

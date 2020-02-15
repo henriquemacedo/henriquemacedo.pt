@@ -10,8 +10,8 @@
 - [x] Portfolio grid with graphql
 - [x] Real project images
 - [ ] Link each image to project details page
-- [ ] Blog post page
-- [ ] Load posts list
+- [x] Blog post page
+- [x] Load posts list
 - [ ] RSS support
 
 ## 🧐 I want to look
