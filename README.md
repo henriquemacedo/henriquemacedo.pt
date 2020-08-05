@@ -9,10 +9,11 @@
 - [x] Happy companies
 - [x] Portfolio grid with graphql
 - [x] Real project images
-- [ ] Link each image to project details page
 - [x] Blog post page
 - [x] Load posts list
+- [ ] Link each image to project details page
 - [ ] RSS support
+- [ ] Light/Dark mode
 
 ## 🧐 I want to look
 
