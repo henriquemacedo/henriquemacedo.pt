@@ -21,6 +21,7 @@ const IndexPage = () => (
         `frontend`,
         `developer`,
         `design system`,
+        `javascript`,
         `react`,
         `react native`,
       ]}

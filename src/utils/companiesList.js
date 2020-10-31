@@ -1,10 +1,8 @@
 import taikai from '../images/companies/taikai.svg'
 import osram from '../images/companies/osram.svg'
 import dignuscare from '../images/companies/dignuscare.svg'
-import coolfarm from '../images/companies/coolfarm.svg'
 import whitesmith from '../images/companies/whitesmith.svg'
 import mirror from '../images/companies/mirror.svg'
-import fincheck from '../images/companies/fincheck.svg'
 import uc from '../images/companies/uc.png'
 
 const companies = [

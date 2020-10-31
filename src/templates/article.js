@@ -1,43 +1,15 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 
+import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
 
 const Wrapper = styled.div`
   margin: 60px auto 0 auto;
   max-width: 800px;
   padding: 0 5vw;
-
-  h1 {
-    margin: 0.3em 0 0 0;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: var(--textSize);
-  }
-
-  ul {
-    margin: 0 0 0 30px;
-    padding: 0;
-    font-size: 17px;
-
-    li {
-      &:not(:last-child) {
-        margin-bottom: 0.5em;
-      }
-    }
-
-    & + p {
-      margin-top: 2em;
-    }
-  }
 
   > a {
     font-size: 12px;
@@ -51,17 +23,74 @@ const Wrapper = styled.div`
   }
 
   > div {
-    margin-top: 3em;
+    margin-top: 2em;
+
+    h1 {
+      margin: 0.3em 0 0 0;
+    }
+
+    h2 {
+      font-size: 0.85rem;
+    }
+
+    p {
+      font-size: var(--textSize);
+    }
+
+    p + h2 {
+      margin-top: 2em;
+    }
+
+    ul {
+      margin: 0 0 0 2em;
+      padding: 0;
+      font-size: 17px;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0.5em;
+        }
+      }
+
+      & + p {
+        margin-top: 2em;
+      }
+    }
+
+    a {
+      color: var(--highlight);
+      transition-duration: 0.3s;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    blockquote {
+      margin: 0;
+      border-left: 4px solid var(--white);
+      padding-left: 0.75em;
+      font-style: italic;
+
+      & + p {
+        margin-top: 2em;
+      }
+    }
+
+    img {
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
   }
 `
 
 export default function Template({ data }) {
   const post = data.markdownRemark
-  const { title, date, time } = post.frontmatter
+  const { title, date, time, canonical } = post.frontmatter
 
   return (
     <Layout>
-      <Helmet title={['Henrique Macedo — ', title]} />
+      <SEO title={`Henrique Macedo — ${title}`} canonicalLink={canonical} />
       <Wrapper>
         <Link to="/blog">/ Back</Link>
         <h1>{title}</h1>
@@ -82,6 +111,7 @@ export const postQuery = graphql`
         title
         time
         path
+        canonical
       }
       html
     }
