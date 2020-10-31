@@ -1,10 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/organisms/layout'
-import { device } from '../components/ions/breakpoints'
 
 const Wrapper = styled.div`
   margin: 60px auto 0 auto;
@@ -12,29 +12,15 @@ const Wrapper = styled.div`
   padding: 0 5vw;
 
   h1 {
-    font-size: 1.25rem;
-    line-height: 150%;
+    margin: 0.3em 0 0 0;
   }
 
   h2 {
     font-size: 1rem;
   }
 
-  span {
-    display: block;
-    margin: 0.5em 0 4em 0;
-    font-size: 12px;
-    color: var(--grey);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-  }
-
   p {
-    font-size: 17px;
-
-    &:not(:last-child) {
-      margin-bottom: 2em;
-    }
+    font-size: var(--textSize);
   }
 
   ul {
@@ -44,7 +30,7 @@ const Wrapper = styled.div`
 
     li {
       &:not(:last-child) {
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
       }
     }
 
@@ -53,15 +39,19 @@ const Wrapper = styled.div`
     }
   }
 
-  @media ${device.s} {
-    span {
-      margin: 1em 0 4em 0;
-    }
+  > a {
+    font-size: 12px;
+    color: var(--grey);
+    letter-spacing: 3px;
+    text-transform: uppercase;
 
-    p,
-    ul {
-      line-height: 180%;
+    &:hover {
+      color: var(--highlight);
     }
+  }
+
+  > div {
+    margin-top: 3em;
   }
 `
 
@@ -73,6 +63,7 @@ export default function Template({ data }) {
     <Layout>
       <Helmet title={['Henrique Macedo — ', title]} />
       <Wrapper>
+        <Link to="/blog">/ Back</Link>
         <h1>{title}</h1>
         <span>
           {date} · {time} min read

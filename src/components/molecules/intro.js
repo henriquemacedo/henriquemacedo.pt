@@ -13,7 +13,12 @@ const Wrapper = styled.div`
 
   h1 {
     margin: 60px 0;
+    font-size: 3rem;
     color: var(--highlight);
+  }
+
+  p:not(:last-child) {
+    margin-bottom: 1em;
   }
 
   a {

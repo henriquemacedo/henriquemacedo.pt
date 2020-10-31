@@ -14,8 +14,10 @@ const Wrapper = styled.div`
 
   h2 {
     margin: 0 0 30px 0;
-    font-size: 1rem;
-    color: var(--grey, #41505e);
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--grey);
   }
 
   > div {
@@ -26,12 +28,6 @@ const Wrapper = styled.div`
   }
 
   @media ${device.s} {
-    h2 {
-      font-size: 12px;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-    }
-
     > div {
       grid-gap: 5vw;
     }
