@@ -8,13 +8,11 @@ import fincheck from '../images/companies/fincheck.svg'
 import uc from '../images/companies/uc.png'
 
 const companies = [
-  { logo: taikai, name: 'Taikai' },
+  { logo: taikai, name: 'TAIKAI' },
   { logo: osram, name: 'OSRAM' },
   { logo: dignuscare, name: 'Dignus Care' },
-  { logo: coolfarm, name: 'CoolFarm' },
   { logo: whitesmith, name: 'Whitesmith' },
   { logo: mirror, name: 'Mirror' },
-  { logo: fincheck, name: 'Fincheck' },
   { logo: uc, name: 'University of Coimbra' },
 ]
 
