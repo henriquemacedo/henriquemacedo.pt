@@ -78,8 +78,7 @@ const Wrapper = styled.div`
     }
 
     img {
-      width: calc(100% + 10vw);
-      max-width: 850px;
+      max-width: calc(100% + 10vw);
       height: auto;
       margin-left: 50%;
       transform: translateX(-50%);
