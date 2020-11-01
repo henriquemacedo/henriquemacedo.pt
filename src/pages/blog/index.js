@@ -9,7 +9,7 @@ import Post from '../../components/molecules/post'
 
 export const AllArticlesQuery = graphql`
   query AllArticles {
-    allMarkdownRemark(sort: { fields: frontmatter___date, order: ASC }) {
+    allMarkdownRemark(sort: { fields: frontmatter___key, order: DESC }) {
       edges {
         node {
           frontmatter {
