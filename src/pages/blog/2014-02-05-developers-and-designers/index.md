@@ -1,4 +1,5 @@
 ---
+key: 1
 path: '/blog/developers-and-designers'
 date: '5 Feb, 2014'
 time: '5'
