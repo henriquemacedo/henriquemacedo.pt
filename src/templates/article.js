@@ -22,12 +22,12 @@ const Wrapper = styled.div`
     }
   }
 
+  h1 {
+    margin: 0.3em 0 0 0;
+  }
+
   > div {
     margin-top: 2em;
-
-    h1 {
-      margin: 0.3em 0 0 0;
-    }
 
     h2 {
       font-size: 0.85rem;
