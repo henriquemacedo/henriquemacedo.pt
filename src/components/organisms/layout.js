@@ -9,6 +9,7 @@ import Nav from './nav'
 
 const Wrapper = styled.div`
   padding: 10vw 0 0 0;
+  overflow-x: hidden;
 `
 
 const Layout = ({ children }) => (

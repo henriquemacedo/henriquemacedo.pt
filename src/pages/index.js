@@ -21,6 +21,7 @@ const IndexPage = () => (
         `frontend`,
         `developer`,
         `design system`,
+        `javascript`,
         `react`,
         `react native`,
       ]}
@@ -31,7 +32,7 @@ const IndexPage = () => (
         I'm a Frontend Developer with a strong motivation to build beautiful
         user interfaces from the scratch to the final &#60;/stage&#62;, with a
         focus on design systems, performance and accessibility. I like doing
-        some magic with HTML, CSS, JavaScript, React JS and React Native.
+        some magic with HTML, CSS and JavaScript.
       </p>
       <p>
         Currently partner at{' '}
@@ -40,7 +41,7 @@ const IndexPage = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          Taikai
+          TAIKAI
         </a>
         . Co-Founder of Dignus Care. Previously at{' '}
         <a

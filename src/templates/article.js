@@ -1,78 +1,100 @@
 import React from 'react'
-import Helmet from 'react-helmet'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 
+import SEO from '../utils/seo'
 import Layout from '../components/organisms/layout'
-import { device } from '../components/ions/breakpoints'
 
 const Wrapper = styled.div`
   margin: 60px auto 0 auto;
   max-width: 800px;
   padding: 0 5vw;
 
-  h1 {
-    font-size: 1.25rem;
-    line-height: 150%;
-  }
-
-  h2 {
-    font-size: 1rem;
-  }
-
-  span {
-    display: block;
-    margin: 0.5em 0 4em 0;
+  > a {
     font-size: 12px;
     color: var(--grey);
     letter-spacing: 3px;
     text-transform: uppercase;
-  }
 
-  p {
-    font-size: 17px;
-
-    &:not(:last-child) {
-      margin-bottom: 2em;
+    &:hover {
+      color: var(--highlight);
     }
   }
 
-  ul {
-    margin: 0 0 0 30px;
-    padding: 0;
-    font-size: 17px;
+  h1 {
+    margin: 0.3em 0 0 0;
+  }
 
-    li {
-      &:not(:last-child) {
-        margin-bottom: 1em;
+  > div {
+    margin-top: 2em;
+
+    h2 {
+      font-size: 0.85rem;
+    }
+
+    p {
+      font-size: var(--textSize);
+    }
+
+    p + h2 {
+      margin-top: 2em;
+    }
+
+    ul {
+      margin: 0 0 0 2em;
+      padding: 0;
+      font-size: 17px;
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0.5em;
+        }
+      }
+
+      & + p {
+        margin-top: 2em;
       }
     }
 
-    & + p {
-      margin-top: 2em;
-    }
-  }
+    a {
+      color: var(--highlight);
+      transition-duration: 0.3s;
 
-  @media ${device.s} {
-    span {
-      margin: 1em 0 4em 0;
+      &:hover {
+        text-decoration: underline;
+      }
     }
 
-    p,
-    ul {
-      line-height: 180%;
+    blockquote {
+      margin: 0;
+      border-left: 4px solid var(--white);
+      padding-left: 0.75em;
+      font-style: italic;
+
+      & + p {
+        margin-top: 2em;
+      }
+    }
+
+    img {
+      max-width: calc(100% + 10vw);
+      height: auto;
+      margin-left: 50%;
+      transform: translateX(-50%);
     }
   }
 `
 
 export default function Template({ data }) {
   const post = data.markdownRemark
-  const { title, date, time } = post.frontmatter
+  const { title, date, time, canonical } = post.frontmatter
 
   return (
     <Layout>
-      <Helmet title={['Henrique Macedo — ', title]} />
+      <SEO title={`Henrique Macedo — ${title}`} canonicalLink={canonical} />
       <Wrapper>
+        <Link to="/blog">/ Back</Link>
         <h1>{title}</h1>
         <span>
           {date} · {time} min read
@@ -91,6 +113,7 @@ export const postQuery = graphql`
         title
         time
         path
+        canonical
       }
       html
     }

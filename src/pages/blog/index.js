@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
 
+import SEO from '../../utils/seo'
 import Layout from '../../components/organisms/layout'
 import Posts from '../../components/organisms/posts'
 import Post from '../../components/molecules/post'
 
 export const AllArticlesQuery = graphql`
   query AllArticles {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: frontmatter___key, order: DESC }) {
       edges {
         node {
           frontmatter {
@@ -27,7 +27,7 @@ export const AllArticlesQuery = graphql`
 
 const BlogPage = ({ data }) => (
   <Layout>
-    <Helmet title="Henrique Macedo — Articles" />
+    <SEO title="Henrique Macedo — Blog" />
     <Posts>
       {data.allMarkdownRemark.edges.map(post => {
         const { title, date, time, description, path } = post.node.frontmatter
