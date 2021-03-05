@@ -21,23 +21,18 @@ const Wrapper = styled.div`
 
 const Portfolio = () => (
   <StaticQuery
-    query={graphql`
-      query {
-        portfolioImages: allFile(
-          filter: { sourceInstanceName: { eq: "portfolio" } }
-        ) {
-          edges {
-            node {
-              childImageSharp {
-                fluid(maxWidth: 1280) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
+    query={graphql`{
+  portfolioImages: allFile(filter: {sourceInstanceName: {eq: "portfolio"}}) {
+    edges {
+      node {
+        childImageSharp {
+          gatsbyImageData(layout: FULL_WIDTH)
         }
       }
-    `}
+    }
+  }
+}
+`}
     render={data => (
       <Wrapper>
         <PortfolioImage portfolioImages={data.portfolioImages.edges} />

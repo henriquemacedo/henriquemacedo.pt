@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 class PortfolioImage extends React.Component {
   static propTypes = {
@@ -10,16 +10,13 @@ class PortfolioImage extends React.Component {
   render() {
     const { portfolioImages } = this.props
 
-    return (
-      <>
-        {portfolioImages.map(image => (
-          <Img
-            key={image.node.childImageSharp.fluid.src}
-            fluid={image.node.childImageSharp.fluid}
-          />
-        ))}
-      </>
-    )
+    return <>
+      {portfolioImages.map(image => (
+        <GatsbyImage
+          image={image.node.childImageSharp.gatsbyImageData}
+          key={image.node.childImageSharp.gatsbyImageData.src} />
+      ))}
+    </>;
   }
 }
 

@@ -44,6 +44,7 @@ module.exports = {
         path: `${__dirname}/src/pages/blog`,
       },
     },
+    `gatsby-plugin-image`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
