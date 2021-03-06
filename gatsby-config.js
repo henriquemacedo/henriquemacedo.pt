@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   siteMetadata: {
     title: `Henrique Macedo — UI Developer`,
@@ -60,6 +62,15 @@ module.exports = {
         icon: `src/images/icons/icon.png`,
       },
     },
-    // 'gatsby-plugin-offline',
+    {
+      resolve: `gatsby-plugin-alias-imports`,
+      options: {
+        alias: {
+          "@components": path.resolve(__dirname, 'src/components'),
+          "@utils": path.resolve(__dirname, 'src/utils')
+        },
+        extensions: []
+      }
+    }
   ],
 }
