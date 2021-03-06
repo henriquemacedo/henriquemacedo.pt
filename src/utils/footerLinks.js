@@ -5,21 +5,14 @@ const footerLinks = [
     name: 'GitHub',
     icon: 'github',
   },
-  { key: 2, link: 'https://dev.to/henrique', name: 'DEV', icon: 'dev' },
   {
-    key: 3,
-    link: 'https://dribbble.com/henriquemacedo',
-    name: 'Dribbble',
-    icon: 'dribbble',
-  },
-  {
-    key: 4,
+    key: 2,
     link: 'https://twitter.com/henrikemacedo',
     name: 'Twitter',
     icon: 'twitter',
   },
   {
-    key: 6,
+    key: 2,
     link: 'https://www.linkedin.com/in/henrikemacedo',
     name: 'Linkedin',
     icon: 'linkedin',

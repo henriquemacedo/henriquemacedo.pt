@@ -1,11 +1,12 @@
 import React from 'react'
+import SEO from '@utils/seo'
 
-import SEO from '../utils/seo'
-import Layout from '../components/organisms/layout'
-import Intro from '../components/molecules/intro'
-import Companies from '../components/molecules/companies'
-import Portfolio from '../components/molecules/portfolio'
-import companiesList from '../utils/companiesList'
+import Layout from '@components/layout'
+import Intro from '@components/intro'
+import Companies from '@components/companies'
+import Portfolio from '@components/portfolio'
+
+import companiesList from '@utils/companiesList'
 
 const IndexPage = () => (
   <Layout>

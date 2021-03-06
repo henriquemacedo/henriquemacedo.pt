@@ -3,8 +3,8 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 import { graphql } from 'gatsby'
 
-import SEO from '../utils/seo'
-import Layout from '../components/organisms/layout'
+import SEO from '@utils/seo'
+import Layout from '@components/layout'
 
 const Wrapper = styled.div`
   margin: 60px auto 0 auto;

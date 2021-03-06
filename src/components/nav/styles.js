@@ -1,10 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
+import { device } from '@utils/breakpoints'
 
-import { device } from '../ions/breakpoints'
-
-const Wrapper = styled.nav`
+export const Wrapper = styled.nav`
   position: fixed;
   width: 100%;
   padding: 5vw;
@@ -41,22 +38,3 @@ const Wrapper = styled.nav`
     }
   }
 `
-
-const Nav = () => (
-  <Wrapper>
-    <ul>
-      <li>
-        <Link activeClassName="active" to="/">
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link activeClassName="active" to="/blog">
-          Blog
-        </Link>
-      </li>
-    </ul>
-  </Wrapper>
-)
-
-export default Nav

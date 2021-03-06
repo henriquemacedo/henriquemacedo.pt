@@ -1,10 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { device } from '@utils/breakpoints'
 
-import { device } from '../ions/breakpoints'
-
-const Wrapper = styled.div`
+export const Wrapper = styled.div`
   padding: 0 5vw 0 5vw;
 
   @media ${device.s} {
@@ -30,11 +27,3 @@ const Wrapper = styled.div`
     }
   }
 `
-
-const Intro = ({ children }) => <Wrapper>{children}</Wrapper>
-
-Intro.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Intro
