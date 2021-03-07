@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   h1 {
@@ -20,4 +20,4 @@ export const Wrapper = styled.div`
     border-bottom: 1px solid var(--grey);
     padding-bottom: 60px;
   }
-`
+`;

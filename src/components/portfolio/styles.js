@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { device } from '@utils/breakpoints'
+import styled from 'styled-components';
+import { device } from '@utils/breakpoints';
 
 export const Wrapper = styled.div`
   display: grid;
@@ -13,4 +13,4 @@ export const Wrapper = styled.div`
   @media ${device.xl} {
     grid-template-columns: repeat(3, 1fr);
   }
-`
+`;

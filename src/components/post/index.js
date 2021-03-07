@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import * as Styles from "./styles"
+import React from 'react';
+import { Link } from 'gatsby';
+import * as Styles from './styles';
 
 const Post = ({ title, date, time, description, path }) => (
   <Styles.Wrapper>
@@ -11,6 +11,6 @@ const Post = ({ title, date, time, description, path }) => (
     <p>{description}</p>
     <Link to={path}>— Read More</Link>
   </Styles.Wrapper>
-)
+);
 
-export default Post
+export default Post;

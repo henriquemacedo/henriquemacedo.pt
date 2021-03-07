@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 10vw;
@@ -35,4 +35,4 @@ export const Wrapper = styled.div`
       }
     }
   }
-`
+`;

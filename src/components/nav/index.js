@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import * as Styles from "./styles";
+import React from 'react';
+import { Link } from 'gatsby';
+import * as Styles from './styles';
 
 const Nav = () => (
   <Styles.Wrapper>
@@ -17,6 +17,6 @@ const Nav = () => (
       </li>
     </ul>
   </Styles.Wrapper>
-)
+);
 
-export default Nav
+export default Nav;

@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { device } from '@utils/breakpoints'
+import styled from 'styled-components';
+import { device } from '@utils/breakpoints';
 
 export const Wrapper = styled.div`
   padding: 0 5vw 0 5vw;
@@ -26,4 +26,4 @@ export const Wrapper = styled.div`
       border-color: var(--highlight);
     }
   }
-`
+`;

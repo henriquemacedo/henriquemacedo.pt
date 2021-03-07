@@ -17,6 +17,6 @@ const footerLinks = [
     name: 'Linkedin',
     icon: 'linkedin',
   },
-]
+];
 
-export default footerLinks
+export default footerLinks;

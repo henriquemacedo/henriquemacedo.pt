@@ -1,12 +1,12 @@
-import React from 'react'
-import SEO from '@utils/seo'
+import React from 'react';
+import SEO from '@utils/seo';
 
-import Layout from '@components/layout'
-import Intro from '@components/intro'
-import Companies from '@components/companies'
-import Portfolio from '@components/portfolio'
+import Layout from '@components/layout';
+import Intro from '@components/intro';
+import Companies from '@components/companies';
+import Portfolio from '@components/portfolio';
 
-import companiesList from '@utils/companiesList'
+import companiesList from '@utils/companiesList';
 
 const IndexPage = () => (
   <Layout>
@@ -77,6 +77,6 @@ const IndexPage = () => (
     />
     <Portfolio />
   </Layout>
-)
+);
 
-export default IndexPage
+export default IndexPage;

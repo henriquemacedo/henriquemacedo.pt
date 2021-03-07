@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { device } from '@utils/breakpoints'
+import styled from 'styled-components';
+import { device } from '@utils/breakpoints';
 
 export const Wrapper = styled.nav`
   position: fixed;
@@ -37,4 +37,4 @@ export const Wrapper = styled.nav`
       }
     }
   }
-`
+`;

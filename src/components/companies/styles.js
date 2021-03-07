@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { device } from '@utils/breakpoints'
+import styled from 'styled-components';
+import { device } from '@utils/breakpoints';
 
 export const Wrapper = styled.div`
   padding: 30px 5vw 60px 5vw;
@@ -28,7 +28,7 @@ export const Wrapper = styled.div`
       grid-gap: 5vw;
     }
   }
-`
+`;
 
 export const Logo = styled.div`
   display: flex;
@@ -47,4 +47,4 @@ export const Logo = styled.div`
       max-width: none;
     }
   }
-`
+`;

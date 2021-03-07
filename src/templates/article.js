@@ -1,10 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { graphql } from 'gatsby'
-
-import SEO from '@utils/seo'
-import Layout from '@components/layout'
+import React from 'react';
+import styled from 'styled-components';
+import { Link, graphql } from 'gatsby';
+import SEO from '@utils/seo';
+import Layout from '@components/layout';
 
 const Wrapper = styled.div`
   margin: 60px auto 0 auto;
@@ -84,11 +82,11 @@ const Wrapper = styled.div`
       transform: translateX(-50%);
     }
   }
-`
+`;
 
 export default function Template({ data }) {
-  const post = data.markdownRemark
-  const { title, date, time, canonical } = post.frontmatter
+  const post = data.markdownRemark;
+  const { title, date, time, canonical } = post.frontmatter;
 
   return (
     <Layout>
@@ -102,7 +100,7 @@ export default function Template({ data }) {
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </Wrapper>
     </Layout>
-  )
+  );
 }
 
 export const postQuery = graphql`
@@ -118,4 +116,4 @@ export const postQuery = graphql`
       html
     }
   }
-`
+`;
