@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { rem } from 'polished';
 import { device } from '@utils/breakpoints';
 
 export const Wrapper = styled.nav`
@@ -6,21 +7,20 @@ export const Wrapper = styled.nav`
   border-bottom: 1px solid var(--grey);
   position: fixed;
   width: 100%;
-  padding: 5vw;
-  font-size: 12px;
-  letter-spacing: 3px;
+  height: ${rem('100px')};
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+  letter-spacing: ${rem('3px')};
   text-transform: uppercase;
   z-index: 1;
-
-  @media ${device.s} {
-    padding: 2vw;
-  }
 
   ul {
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
+    align-items: center;
 
     li {
       position: relative;
@@ -29,23 +29,21 @@ export const Wrapper = styled.nav`
       a {
         color: var(--white);
         text-decoration: none;
-        -webkit-transition: 0.2s;
-        -moz-transition: 0.2s;
-        -o-transition: 0.2s;
-        transition: 0.2s;
 
         &.active {
+          pointer-events: none;
+
           &:after {
             content: '';
             position: absolute;
             left: 0;
-            bottom: -8px;
+            bottom: ${rem('-8px')};
             margin-left: 50%;
             transform: translateX(-50%);
             border-radius: 999px;
             background-color: var(--highlight);
-            width: 5px;
-            height: 5px;
+            width: ${rem('5px')};
+            height: ${rem('5px')};
           }
         }
 
@@ -55,7 +53,15 @@ export const Wrapper = styled.nav`
       }
 
       &:not(:last-child) {
-        margin-right: 30px;
+        margin-right: ${rem('15px')};
+      }
+    }
+  }
+
+  @media ${device.s} {
+    ul li {
+      &:not(:last-child) {
+        margin-right: ${rem('30px')};
       }
     }
   }
