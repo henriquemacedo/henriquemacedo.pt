@@ -9,6 +9,8 @@ const Portfolio = () => (
       {
         portfolioImages: allFile(
           filter: { sourceInstanceName: { eq: "portfolio" } }
+          limit: 6
+          sort: { order: ASC, fields: name }
         ) {
           edges {
             node {
