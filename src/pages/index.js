@@ -3,10 +3,7 @@ import SEO from '@utils/seo';
 
 import Layout from '@components/layout';
 import Intro from '@components/intro';
-import Companies from '@components/companies';
 import Portfolio from '@components/portfolio';
-
-import companiesList from '@utils/companiesList';
 
 const IndexPage = () => (
   <Layout>

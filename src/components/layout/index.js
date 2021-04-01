@@ -9,6 +9,7 @@ import * as Styles from './styles';
 
 const Layout = ({ children }) => (
   <>
+    <Styles.GlobalStyle />
     <Nav />
     <Styles.Wrapper>{children}</Styles.Wrapper>
     <Footer values={footerLinks} />
