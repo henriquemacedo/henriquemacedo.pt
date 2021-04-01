@@ -11,8 +11,8 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link activeClassName="active" to="/projects">
-          Projects
+        <Link activeClassName="active" to="/portfolio">
+          Portfolio
         </Link>
       </li>
       <li>

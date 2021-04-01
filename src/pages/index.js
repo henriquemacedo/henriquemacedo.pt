@@ -1,5 +1,7 @@
 import React from 'react';
 import SEO from '@utils/seo';
+import { StaticQuery, graphql } from 'gatsby';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
 import Layout from '@components/layout';
 import Intro from '@components/intro';
@@ -68,7 +70,35 @@ const IndexPage = () => (
         .
       </p>
     </Intro>
-    <Portfolio />
+    <Portfolio>
+      <StaticQuery
+        query={graphql`
+          {
+            portfolioImages: allFile(
+              filter: { sourceInstanceName: { eq: "portfolio" } }
+              limit: 6
+              sort: { order: ASC, fields: name }
+            ) {
+              edges {
+                node {
+                  childImageSharp {
+                    gatsbyImageData(layout: FULL_WIDTH)
+                  }
+                }
+              }
+            }
+          }
+        `}
+        render={data =>
+          data.portfolioImages.edges.map(image => (
+            <GatsbyImage
+              image={image.node.childImageSharp.gatsbyImageData}
+              key={image.node.childImageSharp.gatsbyImageData.src}
+            />
+          ))
+        }
+      />
+    </Portfolio>
   </Layout>
 );
 

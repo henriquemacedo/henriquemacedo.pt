@@ -1,38 +1,11 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import { GatsbyImage } from 'gatsby-plugin-image';
+import PropTypes from 'prop-types';
 import * as Styles from './styles';
 
-const Portfolio = () => (
-  <StaticQuery
-    query={graphql`
-      {
-        portfolioImages: allFile(
-          filter: { sourceInstanceName: { eq: "portfolio" } }
-          limit: 6
-          sort: { order: ASC, fields: name }
-        ) {
-          edges {
-            node {
-              childImageSharp {
-                gatsbyImageData(layout: FULL_WIDTH)
-              }
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <Styles.Wrapper>
-        {data.portfolioImages.edges.map(image => (
-          <GatsbyImage
-            image={image.node.childImageSharp.gatsbyImageData}
-            key={image.node.childImageSharp.gatsbyImageData.src}
-          />
-        ))}
-      </Styles.Wrapper>
-    )}
-  />
-);
+const Portfolio = ({ children }) => <Styles.Wrapper>{children}</Styles.Wrapper>;
+
+Portfolio.propTypes = {
+  children: PropTypes.node.isRequired,
+};
 
 export default Portfolio;

@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
 import Nav from '@components/nav';
 import Footer from '@components/footer';
-
 import footerLinks from '@utils/footerLinks';
 import * as Styles from './styles';
 
