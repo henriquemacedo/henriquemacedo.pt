@@ -71,10 +71,6 @@ const IndexPage = () => (
         .
       </p>
     </Intro>
-    <Companies
-      title="Developing products arround the world"
-      values={companiesList}
-    />
     <Portfolio />
   </Layout>
 );
