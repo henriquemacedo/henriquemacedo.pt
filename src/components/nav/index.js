@@ -16,7 +16,7 @@ const Nav = () => (
         </Link>
       </li>
       <li>
-        <Link activeClassName="active" to="/blog">
+        <Link activeClassName="active" partiallyActive={true} to="/blog">
           Blog
         </Link>
       </li>
