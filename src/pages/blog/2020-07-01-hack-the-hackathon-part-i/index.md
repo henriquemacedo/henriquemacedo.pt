@@ -10,7 +10,7 @@ canonical: 'https://taikai.network/blog/hack-the-hackathon-part-i'
 
 Hack the Hackathon is a mini-series (it's only three actually - [Part II](/blog/hack-the-hackathon-part-ii), [Part III](/blog/hack-the-hackathon-part-iii)) of how you should plan your participation in your next hackathon. I'm here to teach you everything you need to know. Ready?
 
-![gif](https://miro.medium.com/max/960/1*SI33-pg_km52FuZQ_6Ei1w.gif)
+---
 
 ## First things first, what is a hack·a·thon?
 

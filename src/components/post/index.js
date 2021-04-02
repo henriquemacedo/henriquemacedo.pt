@@ -7,7 +7,7 @@ const Post = ({ title, date, time, description, path }) => (
     <span>
       {date} · {time} min read
     </span>
-    <h1>{title}</h1>
+    <h2>{title}</h2>
     <p>{description}</p>
     <Link to={path}>— Read More</Link>
   </Styles.Wrapper>

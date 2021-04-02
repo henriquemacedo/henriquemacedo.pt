@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import SEO from '@utils/seo';
 import Layout from '@components/layout';
+import Blog from '@components/blog';
 import Post from '@components/post';
 
 export const AllArticlesQuery = graphql`
@@ -26,14 +27,7 @@ export const AllArticlesQuery = graphql`
 const BlogPage = ({ data }) => (
   <Layout>
     <SEO title="Henrique Macedo — Blog" />
-    <div
-      style={{
-        margin: '60px auto 0 auto',
-        maxWidth: '800px',
-        padding: '0 5vw',
-        color: 'var(--grey)',
-      }}
-    >
+    <Blog>
       {data.allMarkdownRemark.edges.map(post => {
         const { title, date, time, description, path } = post.node.frontmatter;
         return (
@@ -47,7 +41,7 @@ const BlogPage = ({ data }) => (
           />
         );
       })}
-    </div>
+    </Blog>
   </Layout>
 );
 
