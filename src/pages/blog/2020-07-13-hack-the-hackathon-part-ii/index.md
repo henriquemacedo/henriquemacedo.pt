@@ -10,6 +10,8 @@ canonical: 'https://taikai.network/blog/hack-the-hackathon-part-ii'
 
 I'm back to share with you some tips to take the most of every *hackathon*. Now that [I convinced you to join us](/blog/hack-the-hackathon-part-i) in the force, now let me share you how to build your dream team and create a winning (or close to it) project.
 
+---
+
 ## Dream Team
 
 The team is the crucial point of a *hackathon*. It is normal to have the group formed, or partially formed before the challenge, but there may be cases where one or more elements are missing. Or even you have the idea for the project, but you don’t have the team to develop it. The important thing is to form an excellent team. When I say excellent, it is not having the best data scientist in the world, or the best frontend developer. To have an excellent team, you just need to find different people and profiles that covers all the areas you need to create the best project possible in the time you have. Do you need a backend developer to develop an API? Do you need a UI Designer to have a presentable project and still give you an excellent logo as a bonus? Do you need a data scientist to analyze a series of data you found online? Do you need someone from the health field because the project requires you to understand specific needs with specific terms? *Gotta Catch 'em All!*

@@ -10,6 +10,8 @@ canonical: ''
 
 There is a reason for so many group tasks in school. Starting in kindergarten and ending in college, every single person is encouraged and taught to perform in groups — a drawing, a sculpture, a volunteer project, a scientific experiment.
 
+---
+
 Knowing how to work as a team is an essential skill for life, both personal and professional. The society moves ahead if it works together, where each one of us has their part. This maxim is valid in every kind of jobs. If I’m a designer just working in web design, someone has to implement my work, and that person would be the so-called developer. It is also possible to be both, designer and developer, but in this article, we’re just going to focus on the most common situation nowadays, which concerns to a team with a lot of elements, two of whom are the designer and the developer.
 
 Magga Dora, an experienced designer from Boston, USA, said: “Great developers makes me a great designer because they make my design come alive and improve it in the process”. Let’s go by parts to understand who are these two characters.

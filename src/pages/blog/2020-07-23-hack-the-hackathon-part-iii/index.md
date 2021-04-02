@@ -8,9 +8,9 @@ description: 'All the good things come to an end and this mini-series is a proof
 canonical: 'https://taikai.network/blog/hack-the-hackathon-part-iii'
 ---
 
-All the good things come to an end and this mini-series is a proof of that.
+All the good things come to an end and this mini-series is a proof of that. So, right now you already choose if you are [participating in an online or offline hackathon](/blog/hack-the-hackathon-part-i), and [how to gather your A-team](/blog/hack-the-hackathon-part-i). Now it’s time to show the judges who’s the best.
 
-So, right now you already choose if you are [participating in an online or offline hackathon](/blog/hack-the-hackathon-part-i), and [how to gather your A-team](/blog/hack-the-hackathon-part-i). Now it’s time to show the judges who’s the best.
+---
 
 Almost all *hackathons* end with an evaluation of the projects presented, and it is probably the moment when the participants feel less comfortable.
 

@@ -10,6 +10,8 @@ canonical: 'https://taikai.network/blog/first-hackathon-first-winner-project'
 
 Let's go back until March 2019, the month TAIKAI endured its first challenge.
 
+---
+
 After 4 months of development, the TAIKAI platform, like any other SaaS (Software as a Service) platform, had its moment of appearance to the public. But let those who think it was a small event, with few participants, who took place in a controlled environment and who mainly had participants known from the team circle, so that if something went wrong it would not become a catastrophic launch, be disillusioned.
 
 ![gif](https://dev-to-uploads.s3.amazonaws.com/i/2fl84rz8rni7vvy3a11d.gif)
